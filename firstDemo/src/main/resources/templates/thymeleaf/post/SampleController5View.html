@@ -7,16 +7,36 @@
 	<body>
 		<div>
 			<h3 th:text="${ heading }">제목</h3>
-			<p>사용자가 입력한 유저 정보</p>
+			<p>사용자가 입력한 책 정보</p>
 			<table cellpadding=10 border=1>
 				<tr>
-					<td>userName</td>
+					<td>tILE</td>
 					<td>
-						<input type="text" th:value="${userDTO.getUserName()}"></td>
+						<input type="text" th:value="${bookDTO.getTitle()}"></td>
 					</td>
 				</tr>
 				
+				
 				<tr>
+					<td>author</td>
+					<td>
+						<input type="text" th:value="${bookDTO.getAuthor()}"></td>
+					</td>
+				</tr>
+				<tr>
+					<td>Publisher</td>
+					<td>
+						<input type="text" th:value="${bookDTO.getPublisher()}"></td>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Publishing Date</td>
+					<td>
+						<input type="text" th:value="${bookDTO.getPublishingDate()}"></td>
+					</td>
+				</tr>
+				<!--<tr>
 					<td>userId</td>
 					<td>
 						<input type="text" th:value="${userDTO.getUserId()}"></td>
@@ -28,7 +48,7 @@
 					<td>
 						<input type="text" th:value="${userDTO.getUserPhone()}"></td>
 					</td>
-				</tr>
+				</tr> -->
 			</table>
 			
 	
